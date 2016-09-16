@@ -1,0 +1,8 @@
+[user]
+	name = ChrisBAshton
+	email = chrisashtonweb@gmail.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[http]
