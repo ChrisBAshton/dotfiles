@@ -15,3 +15,11 @@ alias iframetest_cucumber='iframetest_setup && node_modules/casperjs/bin/casperj
 alias iframetest='iframetest_node && iframetest_cucumber'
 
 alias quickftp="perl ~/Sites/bbc/news/specials/projects/perl-specials-osx-manual-ftp/ftp.pl"
+
+function rubo() {
+  docker run \
+    --cpu-shares 1024 \
+    --rm=true \
+    --volume $(pwd):/app \
+    bbcnews/rubocop-config --format simple --fail-level F | grep '^F:\|=='
+}
