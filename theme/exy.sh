@@ -6,13 +6,13 @@ if [[ $COLORTERM = gnome-* && $TERM = xterm ]]  && infocmp gnome-256color >/dev/
 if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
   MAGENTA=$(tput setaf 9)
   ORANGE=$(tput setaf 172)
-  GREEN=$(tput setaf 190)
+  PINK=$(tput setaf 127)
   PURPLE=$(tput setaf 141)
   WHITE=$(tput setaf 256)
 else
   MAGENTA=$(tput setaf 5)
   ORANGE=$(tput setaf 4)
-  GREEN=$(tput setaf 2)
+  PINK=$(tput setaf 4)
   PURPLE=$(tput setaf 1)
   WHITE=$(tput setaf 7)
 fi
@@ -26,5 +26,4 @@ parse_git_branch () {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
-
+PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$PINK\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
