@@ -7,7 +7,6 @@ alias wraith--idt='docker run -P -v /Users/ashtoc03/Sites/bbc/news/responsive-ne
 alias idt-wraith='docker run -P -v /Users/ashtoc03/Sites/bbc/idt-product-tests/wraith:/wraithy -w="/wraithy" idt-wraith'
 alias idt-cucumber='docker run -P -v /Users/ashtoc03/Sites/bbc/idt-product-tests:/idt-product-tests -w="/idt-product-tests" idt-cucumber'
 
-
 alias bbc='~/Sites/bbc/news/special/utils/main.sh'
 alias iframetest_setup='cd ~/Sites/bbc/news/special/iframe-scaffold/root/newsspec_'
 alias iframetest_node='iframetest_setup && node_modules/.bin/vows tests/node/tests/*.js --verbose'
@@ -15,6 +14,9 @@ alias iframetest_cucumber='iframetest_setup && node_modules/casperjs/bin/casperj
 alias iframetest='iframetest_node && iframetest_cucumber'
 
 alias quickftp="perl ~/Sites/bbc/news/specials/projects/perl-specials-osx-manual-ftp/ftp.pl"
+
+alias use-phantomjs='   brew unlink phantomjs198; brew link phantomjs;    phantomjs -v'
+alias use-phantomjs198='brew unlink phantomjs;    brew link phantomjs198; phantomjs -v'
 
 function rubo() {
   docker run \
