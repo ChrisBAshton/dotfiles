@@ -15,12 +15,10 @@ source ~/.dotfiles/theme/exy.sh
 #################
 ##### PATHS #####
 #################
-
 source ~/.dotfiles/paths/all.sh
 
 #################
 # MISCELLANEOUS #
 #################
-
-# Load BBC Utils only if it exists
-BBC_UTILS=~/Sites/bbc/news/special/utils/legacy/bash_profile && test -f $BBC_UTILS && source $BBC_UTILS
+source ~/.dotfiles/scripts/atom.sh
+source ~/.dotfiles/scripts/bbc.sh
