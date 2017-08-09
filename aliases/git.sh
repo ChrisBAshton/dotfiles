@@ -6,3 +6,4 @@ alias gc="git commit"
 alias gp="git push"
 alias gpu="git rev-parse --abbrev-ref HEAD | xargs git push -u origin" # push new branch to origin
 alias gitreset="git reset --hard HEAD"
+alias delete_merged_branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # https://stackoverflow.com/a/6127884/5841356

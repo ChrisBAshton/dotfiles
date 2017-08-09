@@ -25,3 +25,6 @@ function rubo() {
     --volume $(pwd):/app \
     bbcnews/rubocop-config --format simple --fail-level F | grep '^F:\|=='
 }
+
+alias p12topem='openssl pkcs12 -in certificate.p12 -out certificate.pem -clcerts -nodes'
+alias pemtop12='openssl pkcs12 -export -in certificate.pem -out certificate.p12 -passout pass:password'
