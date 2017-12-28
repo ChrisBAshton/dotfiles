@@ -1,4 +1,5 @@
 export PATH=$PATH:./node_modules/.bin
+export PATH=$PATH:./bin/
 
 # to install Git via Homebrew
 export PATH=/usr/local/bin:$PATH
