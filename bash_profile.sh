@@ -21,3 +21,4 @@ source ~/.dotfiles/paths/all.sh
 #################
 source ~/.dotfiles/scripts/atom.sh
 source ~/.dotfiles/scripts/bbc.sh
+source ~/.dotfiles/aliases/nvm.sh

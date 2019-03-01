@@ -14,6 +14,3 @@ export PATH=$PATH:$HOME/Library/Python/2.7/bin
 # these were in my ~/.bashrc, guess they need to be exposed too!
 export PYTHONPATH="/Library/Python/2.7/site-packages"
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
