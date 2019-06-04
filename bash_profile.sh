@@ -18,9 +18,5 @@ source ~/.dotfiles/paths/all.sh
 source ~/.dotfiles/scripts/atom.sh
 source ~/.dotfiles/scripts/bbc.sh
 
-if [ "$ZSH_THEME" = "random" ]; then
-  echo "Setting theme to $RANDOM_THEME"
-fi
-
 echo "Profile loaded. Get coding!"
 
