@@ -23,3 +23,10 @@ source ~/.dotfiles/bash_profile.sh
 
 - Assumes `nvm` and `avn` and `avn-nvm` is installed: https://github.com/wbyoung/avn
 - You'll also want https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+- Powerline fonts https://gist.github.com/kevin-smets/8568070
+
+## Usage
+
+You can `reload` to reload your `.zshrc`. By default, this will also choose a random theme :)
+
+If you want a specific theme, e.g. `agnoster`, you can `reload -t agnoster`.
