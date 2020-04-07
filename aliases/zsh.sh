@@ -17,11 +17,14 @@ reload() {
   source ~/.zshrc
 }
 
-if [ -z "$ZSH_THEME" ]; then
-  echo "Welcome to your terminal. Choosing a theme at random..."
-  echo "(Try a different one by running 'reload', or specify by running e.g. 'reload -t agnoster'. 'af-magic' is good too.)"
-  ZSH_THEME=random
-fi
+#if [ -z "$ZSH_THEME" ]; then
+#  echo "Welcome to your terminal. Choosing a theme at random..."
+#  echo "(Try a different one by running 'reload', or specify by running e.g. 'reload -t fino'."
+#  echo "These are all great themes: 'fino', 'agnoster', 'af-magic', 'steeef'"
+#  ZSH_THEME=random
+#fi
+
+ZSH_THEME=fino
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -31,6 +34,8 @@ fi
 plugins=(git gitfast zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+setopt NO_NOMATCH
 
 # This must come AFTER the `oh-my-zsh.sh` sourcing
 if [ "$ZSH_THEME" = "random" ]; then
