@@ -25,11 +25,6 @@ source ~/.dotfiles/aliases/zsh.sh
 #################
 source ~/.dotfiles/paths/all.sh
 
-#################
-# MISCELLANEOUS #
-#################
-source ~/.dotfiles/scripts/atom.sh
-
 echo "Profile loaded. Get coding!"
 
 # allow gds-cli, which uses 'gds' as its entrypoint
