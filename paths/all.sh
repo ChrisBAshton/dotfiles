@@ -10,6 +10,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # python
 export PATH=$PATH:$HOME/Library/Python/2.7/bin
+export PATH=$PATH:$HOME/Library/Python/3.8/bin
 
 # NVM/NPM/Node
 export NVM_DIR="$HOME/.nvm"

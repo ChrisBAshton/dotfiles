@@ -19,7 +19,7 @@ export PATH="$PATH:~/bin"
 # GOVUK SSH
 if [ -z "$GOVUK_SSH_SETUP" ]; then
   if [ -f ~/.ssh/alphagov ]; then
-    # add alphagov ssh keys to your profile so that you can `govukcli ssh jumpbox`
+    # add alphagov ssh keys to your profile so that you can SSH
     /usr/bin/ssh-add -K ~/.ssh/alphagov
     export GOVUK_SSH_SETUP=true
   fi
