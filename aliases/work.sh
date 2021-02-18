@@ -2,6 +2,7 @@ alias run="govuk-docker-run bundle exec"
 alias gbundle="govuk-docker-run bundle"
 alias gdssh="gds govuk connect ssh -e" # e.g. `gdssh integration jumpbox`
 alias console="gds govuk connect app-console -e" # e.g. `console staging publishing_api/publishing-api`
+alias dbconsole="gds govuk connect app-dbconsole -e" # e.g. `dbconsole staging publishing_api/publishing-api`
 
 # govuk-guix
 export PATH="$PATH:~/govuk/govuk-guix/bin"
