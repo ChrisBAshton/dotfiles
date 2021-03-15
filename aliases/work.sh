@@ -28,3 +28,6 @@ if [ -z "$GOVUK_SSH_SETUP" ]; then
   fi
   # else assume we're on personal Mac
 fi
+
+# Verify
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home/'
