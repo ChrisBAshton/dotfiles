@@ -15,4 +15,4 @@ alias addtocommit="git commit . --amend --no-edit"
 # resets the timestamp of the current commit. Great if you've reordered a commit in a rebase, but don't want to 'git rebase --ignore-date master' on ALL commits
 alias resetcommit="LC_ALL=C GIT_COMMITTER_DATE=\"$(date)\" git commit --amend --no-edit --date \"$(date)\""
 alias gitreset="git reset --hard HEAD"
-alias delete_merged_branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d' # https://stackoverflow.com/a/6127884/5841356
+alias delete_merged_branches='git branch --merged | egrep -v "(^\*|master|dev|main)" | xargs git branch -d' # https://stackoverflow.com/a/6127884/5841356
