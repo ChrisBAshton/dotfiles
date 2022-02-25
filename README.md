@@ -1,6 +1,6 @@
 # ChrisBAshton Dotfiles
 
-Setup:
+## Setup
 
 ```sh
 git clone git@github.com:ChrisBAshton/dotfiles.git ~/.dotfiles
@@ -10,6 +10,4 @@ git clone git@github.com:zsh-users/zsh-autosuggestions.git ~/.dotfiles/.oh-my-zs
 echo "source ~/.dotfiles/zshrc.sh" > "$HOME/.zshrc"
 ```
 
-## Dependencies
-
-- Assumes `nvm` and `avn` and `avn-nvm` is installed: https://github.com/wbyoung/avn
+Then just do a quick `ls -lsa ~` to make sure you don't have a `~/.bash_profile` (or if you do, copy the settings over to `~/.dotfiles/`).
