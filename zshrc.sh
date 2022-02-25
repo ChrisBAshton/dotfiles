@@ -26,7 +26,3 @@ source ~/.dotfiles/aliases/zsh.sh
 source ~/.dotfiles/paths/all.sh
 
 echo "Profile loaded. Get coding!"
-
-# allow gds-cli, which uses 'gds' as its entrypoint
-# we want to unalias the ZSH implementation of 'gds' (which does something git-y)
-unalias gds
