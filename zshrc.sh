@@ -18,7 +18,14 @@ source ~/.dotfiles/aliases/git.sh
 source ~/.dotfiles/aliases/personal.sh
 source ~/.dotfiles/aliases/utils.sh
 source ~/.dotfiles/aliases/work.sh
-source ~/.dotfiles/aliases/zsh.sh
+
+#################
+### OH-MY-ZSH ###
+#################
+source ~/.dotfiles/zsh-config.sh
+source $ZSH/oh-my-zsh.sh
+
+setopt NO_NOMATCH
 
 #################
 ##### PATHS #####
