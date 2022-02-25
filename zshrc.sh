@@ -16,9 +16,4 @@ source $ZSH/oh-my-zsh.sh
 
 setopt NO_NOMATCH
 
-#################
-##### PATHS #####
-#################
-source ~/.dotfiles/paths/all.sh
-
 echo "Profile loaded. Get coding!"
