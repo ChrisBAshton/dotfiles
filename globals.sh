@@ -1,3 +1,12 @@
+export ZSH="$HOME/.dotfiles/.oh-my-zsh"
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# force load rbenv to ensure correct version of ruby used
+export PATH="$PATH:~/.rbenv/shims"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # to install Git via Homebrew
 export PATH=/usr/local/bin:$PATH
 
