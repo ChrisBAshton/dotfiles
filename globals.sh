@@ -20,3 +20,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # these were in my ~/.bashrc, guess they need to be exposed too!
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
+
+# Fix SSH username on GOV.UK
+export USER="christopherashton"
+
