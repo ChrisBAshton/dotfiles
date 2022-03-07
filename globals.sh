@@ -5,4 +5,3 @@ export PATH=/usr/local/bin:$PATH
 
 # Fix SSH username on GOV.UK
 export USER="christopherashton"
-
