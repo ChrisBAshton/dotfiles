@@ -12,6 +12,3 @@ export PATH=$PATH:/usr/local/sbin
 
 # gpg/gpg2
 export PATH="$PATH:/usr/local/MacGPG2/bin/"
-
-# Verify
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home/'
