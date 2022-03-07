@@ -13,9 +13,6 @@ export PATH=$PATH:/usr/local/sbin
 # gpg/gpg2
 export PATH="$PATH:/usr/local/MacGPG2/bin/"
 
-# Add AWS CLI (installed to ~/bin)
-export PATH="$PATH:~/bin"
-
 # GOVUK SSH
 if [ -z "$GOVUK_SSH_SETUP" ]; then
   if [ -f ~/.ssh/alphagov ]; then
