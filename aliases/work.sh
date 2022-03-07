@@ -13,15 +13,5 @@ export PATH=$PATH:/usr/local/sbin
 # gpg/gpg2
 export PATH="$PATH:/usr/local/MacGPG2/bin/"
 
-# GOVUK SSH
-if [ -z "$GOVUK_SSH_SETUP" ]; then
-  if [ -f ~/.ssh/alphagov ]; then
-    # add alphagov ssh keys to your profile so that you can SSH
-    /usr/bin/ssh-add -K ~/.ssh/alphagov
-    export GOVUK_SSH_SETUP=true
-  fi
-  # else assume we're on personal Mac
-fi
-
 # Verify
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/adoptopenjdk-15.jdk/Contents/Home/'
