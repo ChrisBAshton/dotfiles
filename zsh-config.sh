@@ -8,7 +8,7 @@ ZSH_THEME=fino # `agnoster`, `af-magic`, and `steeef` are good alternatives
 plugins=(zsh-autosuggestions)
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
