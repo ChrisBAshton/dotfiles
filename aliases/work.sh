@@ -16,6 +16,3 @@ export PATH="$PATH:/usr/local/MacGPG2/bin/"
 # ASDF
 # See https://mac.install.guide/ruby/5.html#:~:text=We%20must%20add%20asdf%20to%20the%20shell%20environment
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# 'pass' (for govuk-secrets)
-source /usr/local/etc/bash_completion.d/password-store
