@@ -13,12 +13,20 @@ awsconsole() {
 
 # govuk kubernetes
 kcontext() {
+    # Usage: `kcontext`
+    # Gets the current context.
+    #
     # Usage: `kcontext integration poweruser`
     # Arg 1: integration, staging, production
     # Arg 2: readonly, poweruser, administrator
     # Defaults to poweruser role.
-    echo "Switching GOV.UK kubernetes context to $1 (${2:-poweruser})..."
-    k config use-context $1 && eval $(gds aws govuk-$1-${2:-poweruser} -e --art 8h)
+    if [ $# -eq 0 ]
+    then
+        k config current-context
+    else
+        echo "Switching GOV.UK kubernetes context to $1 (${2:-poweruser})..."
+        k config use-context $1 && eval $(gds aws govuk-$1-${2:-poweruser} -e --art 8h)
+    fi
 }
 
 kconsole() {
