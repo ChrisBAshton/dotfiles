@@ -3,12 +3,12 @@ alias run="govuk-docker-run bundle exec"
 alias gbundle="govuk-docker-run bundle"
 
 awsconsole() {
-    # Usage: `awsconsole integration poweruser`
+    # Usage: `awsconsole integration developer`
     # Arg 1: integration, staging, production
-    # Arg 2: readonly, poweruser, administrator
-    # Defaults to poweruser role.
-    echo "Opening AWS console on $1 (${2:-poweruser})..."
-    gds aws govuk-$1-${2:-poweruser} -l
+    # Arg 2: developer, readonly, poweruser, administrator
+    # Defaults to developer role.
+    echo "Opening AWS console on $1 (${2:-developer})..."
+    gds aws govuk-$1-${2:-developer} -l
 }
 
 # govuk kubernetes
@@ -16,16 +16,16 @@ kcontext() {
     # Usage: `kcontext`
     # Gets the current context.
     #
-    # Usage: `kcontext integration poweruser`
+    # Usage: `kcontext integration developer`
     # Arg 1: integration, staging, production
-    # Arg 2: readonly, poweruser, administrator
-    # Defaults to poweruser role.
+    # Arg 2: developer, readonly, poweruser, administrator
+    # Defaults to developer role.
     if [ $# -eq 0 ]
     then
         k config current-context
     else
-        echo "Switching GOV.UK kubernetes context to $1 (${2:-poweruser})..."
-        k config use-context $1 && eval $(gds aws govuk-$1-${2:-poweruser} -e --art 8h)
+        echo "Switching GOV.UK kubernetes context to $1 (${2:-developer})..."
+        k config use-context $1 && eval $(gds aws govuk-$1-${2:-developer} -e --art 8h)
     fi
 }
 
