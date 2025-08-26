@@ -2,6 +2,15 @@ alias k="kubectl"
 alias run="govuk-docker-run bundle exec"
 alias gbundle="govuk-docker-run bundle"
 
+smartcop() {
+  local -a files
+  files=("${(@f)$(git diff main --cached --name-only --diff-filter=ACM | grep '\.rb$')}")
+
+  (( ${#files[@]} )) || { echo "No Ruby changes."; return 0; }
+
+  govuk-docker-run rubocop -A --force-exclusion -- "${files[@]}"
+}
+
 awsconsole() {
     # Usage: `awsconsole integration developer`
     # Arg 1: integration, staging, production
