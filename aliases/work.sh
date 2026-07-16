@@ -62,8 +62,8 @@ export PATH=$PATH:/usr/local/sbin
 # gpg/gpg2
 export PATH="$PATH:/usr/local/MacGPG2/bin/"
 
-# Install ASDF using Git, NOT brew - too many issues with the latter. See:
+# Install ASDF using brew
 # https://asdf-vm.com/guide/getting-started.html#_1-install-dependencies
-# Then follow the "ZSH & Git" instructions at:
+# Then follow the "ZSH" instructions at:
 # https://asdf-vm.com/guide/getting-started.html#_3-install-asdf
-. $HOME/.asdf/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
