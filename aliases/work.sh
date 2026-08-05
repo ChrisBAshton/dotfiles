@@ -4,7 +4,7 @@ alias gbundle="govuk-docker-run bundle"
 
 smartcop() {
   local -a files
-  files=("${(@f)$(git diff main --cached --name-only --diff-filter=ACM | grep '\.rb$')}")
+  files=("${(@f)$(git diff main --cached --name-only --diff-filter=ACM | grep -E '\.(rb|rake)$')}")
 
   (( ${#files[@]} )) || { echo "No Ruby changes."; return 0; }
 
