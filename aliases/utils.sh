@@ -3,3 +3,4 @@ alias server='echo "open http://localhost:8000 now!"; python -m SimpleHTTPServer
 alias wine='wine64'
 # get response headers via curl - harder than it should be! https://catonmat.net/cookbooks/curl/print-response-headers
 alias curlr='curl -s -o /dev/null -D -' # e.g. curlr https://www.gov.uk
+export PATH="$HOME/.local/bin:$PATH" # for Claude Code
