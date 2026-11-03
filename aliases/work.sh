@@ -100,6 +100,7 @@ sbxc() {
     -e AWS_SECRET_ACCESS_KEY \
     -e AWS_SESSION_TOKEN \
     -e AWS_REGION \
+    -e AWS_DEFAULT_REGION \
     -- "$@"
 }
 
